@@ -14,7 +14,6 @@ const AvailableMeals = () => {
       const response = await fetch(
         'https://svumeals-e7d8d-default-rtdb.firebaseio.com/meals.json'
       );
-
       if (!response.ok) {
         throw new Error('Something went wrong!');
       }
